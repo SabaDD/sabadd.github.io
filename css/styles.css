@@ -1,0 +1,444 @@
+/* styles.css - Professional Edition */
+
+/* ---------------------------------------------------------- */
+/*  1. General Styles                                         */
+/* ---------------------------------------------------------- */
+
+body,
+html {
+    font-family: 'Source Code Pro', monospace;
+    /* Coding-themed font */
+    margin: 0;
+    padding: 0;
+    color: #ddd;
+    /* Light gray text */
+    background-color: #222;
+    /* Dark gray background */
+    line-height: 1.6;
+    overflow-x: hidden;
+    /* Prevent horizontal scroll */
+}
+
+/* ---------------------------------------------------------- */
+/*  2. Container and Structure                                */
+/* ---------------------------------------------------------- */
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    /* Sidebar and Content */
+    min-height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+aside {
+    background-color: #333;
+    color: #eee;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    position: sticky;
+    /* Stick the sidebar */
+    top: 20px;
+    height: fit-content;
+    /* Avoid exceeding content height */
+}
+aside .profile-pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+        
+    /* Slightly rounded */
+     margin-bottom: 25px;
+     border: 2px solid #5e81ac;  Blue border 
+ }
+
+.content {
+    padding: 20px;
+}
+
+/* ---------------------------------------------------------- */
+        /*  3. Typography                                            */
+        /* ---------------------------------------------------------- */
+h1, h2, h3, h4 {
+    font-family: 'Montserrat', sans-serif;
+    /* Modern font */
+    color: #87CEEB;
+    /* Pink accent color */
+    margin-bottom: 15px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    /* Retro shadow */
+}
+
+h1 {
+    font-size: 1.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+h4 {
+    font-size: 1.1em;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+a {
+    color: #40c4ff;
+    /* cyan link color */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+    a:hover {
+        color: #40c4ff;
+        text-decoration: underline;
+    }
+
+/* ---------------------------------------------------------- */
+/*  4. Navigation                                             */
+/* ---------------------------------------------------------- */
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+    nav ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+/* ---------------------------------------------------------- */
+/*  5. Sections                                              */
+/* ---------------------------------------------------------- */
+
+header,
+section,
+footer {
+    background-color: #444;
+    padding: 30px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------------------------------------------------------- */
+/*  6. Buttons                                               */
+/* ---------------------------------------------------------- */
+
+button {
+    background-color: #4caf50;
+    /* Green button */
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+    button:hover {
+        background-color: #388e3c;
+        /* Darker green */
+    }
+
+/* ---------------------------------------------------------- */
+/*  7. News & Updates                                          */
+/* ---------------------------------------------------------- */
+
+#projects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    /* Two columns with minimum width of 300px */
+    gap: 20px;
+}
+
+.project-item {
+    background-color: #444;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    margin-bottom: 0;
+    /* Remove default margin-bottom */
+}
+
+.project-date {
+    color: #888;
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.full-text {
+    margin-top: 15px;
+}
+
+.read-more {
+    color: #2980b9;
+    /* Darker blue link color */
+}
+
+    .read-more:hover {
+        color: #2980b9;
+    }
+
+.project-item img {
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+/* ---------------------------------------------------------- */
+/*  8. Skills List                                           */
+/* ---------------------------------------------------------- */
+
+#about ul {
+    list-style: none;
+    padding: 0;
+}
+
+    #about ul li {
+        display: inline-block;
+        background-color: #555;
+        color: #fff;
+        padding: 8px 12px;
+        margin: 5px;
+        border-radius: 5px;
+        font-size: 0.9em;
+    }
+
+/* ---------------------------------------------------------- */
+/*  9. Footer                                                */
+/* ---------------------------------------------------------- */
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #eee;
+}
+
+/* ---------------------------------------------------------- */
+/* 10. Media Queries                                         */
+/* ---------------------------------------------------------- */
+
+@media (max-width: 768px) {
+    .container {
+        grid-template-columns: 1fr;
+        /* Stack columns */
+    }
+
+    aside {
+        position: static;
+        /* Remove sticky */
+    }
+
+    #projects {
+        grid-template-columns: 1fr;
+        /* Single column on smaller screens */
+    }
+}
+
+/* ---------------------------------------------------------- */
+/* 11. Interactive Elements (Animations)                    */
+/* ---------------------------------------------------------- */
+
+/* Example: Animate section entrance */
+header,
+section,
+footer {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeInUp 0.8s ease forwards;
+}
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Add delay to stagger the animations */
+header {
+    animation-delay: 0.2s;
+}
+
+#about {
+    animation-delay: 0.4s;
+}
+
+#publications {
+    animation-delay: 0.6s;
+}
+
+#projects {
+    animation-delay: 0.8s;
+}
+
+footer {
+    animation-delay: 1.0s;
+}
+
+/* Example: Retro "scanlines" effect */
+body {
+    background-image: repeating-linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1) 1px, transparent 1px, transparent 2px);
+    background-size: 100% 12px;
+}
+
+/* ---------------------------------------------------------- */
+/* 8. Publications Styles */
+/* ---------------------------------------------------------- */
+
+#publications ul {
+    list-style: none;
+    padding: 0;
+}
+
+#publications li {
+    margin-bottom: 15px;
+}
+
+.publication-title {
+    display: block;
+    font-weight: bold;
+    color: #eee; /* Keep the titles prominent */
+    margin-bottom: 5px;
+}
+
+.publication-authors {
+    display: block;
+    font-style: italic;
+    color: #ccc; /* Make the authors slightly less prominent */
+}
+
+.publication-journal {
+    display: block;
+    font-size: 0.9em;
+    color: #bbb; /* Even less prominent */
+}
+
+.publication-link {
+    display: inline-block;
+    margin-top: 5px;
+    color: #2980b9; /* Link color */
+    text-decoration: none;
+    border-bottom: 1px dotted #2980b9; /* Subtle underline */
+    transition: border-bottom 0.3s ease;
+}
+
+.publication-link:hover {
+    border-bottom: 1px solid #2980b9;
+}
+#patents ul {
+    list-style: none;
+    padding: 0;
+}
+
+#patents li {
+    margin-bottom: 15px;
+}
+
+.patent-title {
+    display: block;
+    font-weight: bold;
+    color: #eee; /* Keep the titles prominent */
+    margin-bottom: 5px;
+}
+
+.patent-authors {
+    display: block;
+    font-style: italic;
+    color: #ccc; /* Make the authors slightly less prominent */
+}
+
+.patent-organization {
+    display: block;
+    font-size: 0.9em;
+    color: #bbb; /* Even less prominent */
+}
+
+.patent-number {
+    display: block;
+    font-size: 0.9em;
+    color: #bbb; /* Even less prominent */
+}
+
+#updates {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #444;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+    #updates ul {
+        list-style: none;
+        padding: 0;
+    }
+
+.update-item {
+    margin-bottom: 10px;
+    /* Reduced spacing */
+    font-size: 0.9em;
+    /* Smaller text */
+    color: #eee;
+    /* Light text color */
+    line-height: 1.4;
+    /* Improved line height */
+}
+
+.update-date {
+    font-style: italic;
+    color: #999;
+    /* Subdued date color */
+    margin-right: 5px;
+}
+.update-link {
+    color: #2980b9;
+    /* Link color */
+    text-decoration: none;
+    margin-left: 10px;
+}
+
+.update-link:hover {
+    text-decoration: underline;
+}
+
+/* ---------------------------------------------------------- */
+/* 15. Contact Section Styles */
+/* ---------------------------------------------------------- */
+
+#contact {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #444;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center; /* Center the content */
+}
+
+    #contact p {
+        margin-bottom: 10px;
+        color: #eee;
+    }
+
+    #contact a {
+        color: #2980b9;
+        /* Link color */
+        text-decoration: none;
+        font-weight: bold; /* Make the email more prominent */
+    }
+
+        #contact a:hover {
+            text-decoration: underline;
+        }
+
+

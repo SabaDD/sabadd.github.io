@@ -1,0 +1,10 @@
+[
+    {
+        "title": "Detection and Prediction of Nutrient Deficiency Stress using Longitudinal Aerial Imagery",
+        "date": "2021-05-18",
+        "summary": "Developed deep learning models to detect and predict nutrient deficiency stress (NDS) in crops using high-resolution aerial imagery.",
+        "fullText": "This project focused on developing deep learning models to detect and predict nutrient deficiency stress (NDS) in crops using high-resolution aerial imagery. Early and precise detection of NDS is critical for economic and environmental sustainability in agriculture. We collected sequences of high-resolution aerial imagery and constructed semantic segmentation models to identify and forecast areas of nutrient deficiency across a field. Key achievements include developing a baseline U-Net model for full-field detection of NDS, quantifying the impact of pretraining, backbone architecture, input representation, and sampling strategy. We constructed a spatiotemporal architecture combining a U-Net with a convolutional LSTM to accurately detect regions showing NDS, achieving an impressive Intersection over Union (IOU) score of 0.53. Furthermore, we demonstrated the ability to predict regions expected to show NDS in future flights (up to three weeks in advance), maintaining an IOU score of 0.47-0.51. Technologies used include Deep Learning, Convolutional Neural Networks, U-Net, Convolutional LSTM, aerial imagery, semantic segmentation, Python, and TensorFlow/PyTorch. This research contributes to the advancement of precision agriculture by providing tools for targeted and timely intervention, reducing operational costs for growers, minimizing chemical runoff, and boosting crop production.",
+        //"imageUrl": "url"
+    }
+]
+

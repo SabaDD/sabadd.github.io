@@ -1,91 +1,250 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saba Dadsetan - Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <script defer src="js/script.js"></script>
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Source+Code+Pro:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<script type="module", src="javascripts/script.js"></script>
 <body>
-    <header class="hero">
-        <div class="container">
-            <div class="hero-text">
-                <h1>Saba Dadsetan</h1>
-                <p>AI Research Engineer | Machine Learning Expert</p>
-                <a href="#contact" class="btn">Contact Me</a>
-            </div>
-        </div>
-    </header>
-    
-    <nav class="navbar">
-        <ul>
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#education">Education</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#publications">Publications</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
-    
-    <section id="about" class="section">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>Expert in Machine Learning, Deep Learning, and Computer Vision with a strong background in AI-driven medical imaging solutions. Passionate about using AI for healthcare advancements.</p>
-        </div>
-    </section>
-    
-    <section id="experience" class="section">
-        <div class="container">
-            <h2>Experience</h2>
-            <p><strong>Genentech (2022-2024)</strong> - Developed AI models for Alzheimer’s Disease progression.</p>
-            <p><strong>University of Pittsburgh</strong> - Graduate Research Assistant in medical imaging and disease prediction.</p>
-        </div>
-    </section>
-    
-    <section id="education" class="section">
-        <div class="container">
-            <h2>Education</h2>
-            <p><strong>PhD in Intelligent Systems</strong>, University of Pittsburgh (2017-2024)</p>
-            <p><strong>BSc in IT Engineering</strong>, University of Tehran (2012-2017)</p>
-        </div>
-    </section>
-    
-    <section id="skills" class="section">
-        <div class="container">
+    <div class="container">
+        <aside id="about">
+            <img src="materials/profile.png" alt="Profile Picture" class="profile-pic">
+            <h2>Saba Dadsetan</h2>
+            <p>
+                <!--I'm computer scientist with passion in computer vision and imaging. I have several years of experience in clinical imaging and working with
+    healthcare staff to create models to apply AI for solving real-world problem.-->
+                Hey there! I'm a Machine Learning and AI enthusiast with a serious passion for tackling real-world problems,
+                especially in the areas of medical imaging and healthcare.
+                I've spent years diving deep into AI, and I love finding innovative solutions using cutting-edge techniques.
+                I'm always looking for new opportunities to learn, grow, and make a positive impact with AI.
+            </p>
             <h2>Skills</h2>
             <ul>
-                <li>Machine Learning, Deep Learning</li>
-                <li>Python, MATLAB, C++</li>
-                <li>TensorFlow, PyTorch</li>
-                <li>Medical Image Analysis</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Computer Vision</li>
+                <li>Tensorflow</li>
+                <li>PyTorch</li>
+                <li>Python</li>
+                <li>AWS</li>
             </ul>
+            <p>
+                <!--<a href="Saba_Dadsetan_Resume_2025.pdf" download> CV</a>📄<br>-->
+                <a href="Saba_Dadsetan_Resume_2025.pdf" download>CV</a><br>
+                <a href="https://scholar.google.com/citations?hl=en&user=GajVlYUAAAAJ" target="_blank">Google Scholar</a><br>
+                <a href="https://www.linkedin.com/in/saba-dadsetan/" target="_blank">LinkedIn</a><br>
+                <a href="https://github.com/SabaDD" target="_blank">GitHub</a>
+            </p>
+        </aside>
+
+        <div class="content">
+            <header>
+                <!--<h1>Welcome to My Portfolio</h1>-->
+                <nav>
+                    <ul>
+                        <li><a href="#updates">Updates</a></li>
+                        <li><a href="#patents">Patents</a></li>
+                        <li><a href="#publications">Publications</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+
+            <section id="updates">
+                <h2>Updates</h2>
+                <div class="timeline" id="timeline-content">
+
+                </div>
+            </section>
+
+            <!--<section id="projects">
+                <h2>Projects</h2>
+            </section>-->
+
+            <!-- News Section -->
+            <!--<section id="news">
+        <h2>News</h2>
+
+    </section>-->
+            <!-- Updates Section -->
+
+            <section id="patents">
+                <h2>Patents</h2>
+                <ul>
+                    <li>
+                        <span class="patent-title">Nutrient Deficiency Detection and Forecasting System.</span>
+                        <span class="patent-authors">S. Dadsetan, G. Rose, N. Hovakimyan, and J. Hobbs.</span>
+                        <em class="patent-organization">Intelinair Inc., 2022.</em>
+                        <span class="patent-number">U.S. Patent Application 17/676,474.</span>
+                    </li>
+                </ul>
+            </section>
+            <section id="publications">
+                <h2>Publications & Research</h2>
+                <ul>
+                    <li>
+                        <span class="publication-title">
+                            Robust Alzheimer's Progression Modeling using Cross-Domain
+                            Self-Supervised Deep Learning.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan, M. Hejrati, S. Wu, S. Hashemifar.</span>
+                        <em class="publication-journal">Medical Transactions on Machine Learning Research (TMLR) 2023</em>
+                        <a href="https://openreview.net/forum?id=HVAeM6sNo8" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://drive.google.com/file/d/1AXjAHw2Ef3Ni_uqZpoih9r72Jq-nHc5F/view?usp=sharing" target="_blank"
+                           class="publication-link">[View Presentation]</a>
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Anterior cruciate ligament classification using pseudo-masking and hard
+                            attention.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan, M. Albers, A. Weinstock, V. Musahl, D. Arefan, S. Wu.</span>
+                        <em class="publication-journal">Medical Imaging 2023: Computer-Aided Diagnosis (Oral Presentation)</em>
+                        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/12465/2655278/Anterior-cruciate-ligament-classification-in-knee-MRI-using-automated-pseudo/10.1117/12.2655278.short" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://drive.google.com/file/d/1jOxn1fMSFt3v6mTCV_2jPGoo-q4D03VA/view?usp=sharing" target="_blank"
+                           class="publication-link">[View Slides]</a>
+                        
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Deep learning of longitudinal mammogram examinations for breast cancer risk
+                            prediction.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan, D. Arefan, W. Berg, M. L. Zuley, J. H. Sumkin, S. Wu.</span>
+                        <em class="publication-journal">Pattern Recognition 132 (2022): 108919.</em>
+                        <a href="https://www.sciencedirect.com/science/article/abs/pii/S0031320322004009?via%3Dihub" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://github.com/SabaDD/LRP-Net" target="_blank"
+                           class="publication-link">[View Code]</a>
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Machine Learning and Radiomics for Osteoporosis Risk Prediction Using X-ray Imaging.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan, G. Kitamura, D. Arefan, Y. Guo, K. Clancy, L. Yang, S. Wu.</span>
+                        <em class="publication-journal">MedRxiv (2022).</em>
+                        <a href="https://www.medrxiv.org/content/10.1101/2022.02.03.22270400v1.full.pdf" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            No-Reference Image Quality Assessment via Transformers, Relative Ranking,
+                            and Self-Consistency.
+                        </span>
+                        <span class="publication-authors">S. A. Golestaneh, S. Dadsetan, K. M Kitani.</span>
+                        <em class="publication-journal">WACV 2021 (Oral Presentation)</em>
+                        <a href="https://openaccess.thecvf.com/content/WACV2022/papers/Golestaneh_No-Reference_Image_Quality_Assessment_via_Transformers_Relative_Ranking_and_Self-Consistency_WACV_2022_paper.pdf" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://github.com/isalirezag/TReS" target="_blank"
+                           class="publication-link">[View Code]</a>
+                        
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Radiomics-informed Deep Curriculum Learning for Breast Cancer
+                            Diagnosis.
+                        </span>
+                        <span class="publication-authors">
+                            G. Nebbia, S. Dadsetan, D. Arefan, M.L. Zuley, J.H. Sumkin, H. Huang,
+                            S. Wu.
+                        </span>
+                        <em class="publication-journal">
+                            Proceedings of the International Conference on Medical image computing and
+                            computer-assisted intervention – MICCAI 2021.
+                        </em>
+                        <a href="https://doi.org/10.1007/978-3-030-87240-3_61" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://drive.google.com/file/d/1l34krE1eEosLO2C05qoZ8s8zPBHUjuLE/view?usp=sharing" target="_blank"
+                           class="publication-link">[View Presentation]</a>
+                        
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Superpixels and Graph Convolutional Neural Networks for Efficient
+                            Detection of Nutrient Deficiency Stress from Aerial Imagery.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan, D. Pichler, D. Wilson, N. Hovakimyan, J. Hobbs.</span>
+                        <em class="publication-journal">
+                            Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern
+                            Recognition Workshops – CVPRW 2021.
+                        </em>
+                        <a href="https://openaccess.thecvf.com/content/CVPR2021W/AgriVision/papers/Dadsetan_Superpixels_and_Graph_Convolutional_Neural_Networks_for_Efficient_Detection_of_CVPRW_2021_paper.pdf" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://youtu.be/xOkBywJAkfc?feature=shared" target="_blank"
+                           class="publication-link">[View Presentation]</a>
+                       
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Detection and Prediction of Nutrient Deficiency Stress using Longitudinal
+                            Aerial Imagery.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan, G. Rose, N. Hovakimyan, J. Hobbs.</span>
+                        <em class="publication-journal">
+                            Proceedings of the Thirty-fifth AAAI conference on artificial intelligence
+                            – AAAI 2021.
+                        </em>
+                        <a href="https://cdn.aaai.org/ojs/17730/17730-13-21224-1-2-20210518.pdf" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                        <a href="https://drive.google.com/file/d/1YxXk9vE4Vw-MpZXxpQcTrOO1TyjX9LsC/view?usp=sharing" target="_blank"
+                           class="publication-link">[View Slides]</a>
+                        
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            Learning Knowledge from Longitudinal Data of Mammograms to Improving Breast
+                            Cancer Risk Prediction.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan and S. Wu.</span>
+                        <em class="publication-journal">
+                            Medical Imaging 2021: Imaging Informatics for Healthcare, Research, and
+                            Applications.
+                        </em>
+                        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/11601/116010M/Learning-knowledge-from-longitudinal-data-of-mammograms-to-improving-breast/10.1117/12.2582267.short" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                    </li>
+                    <li>
+                        <span class="publication-title">
+                            A data interpretation approach for deep learning-based prediction
+                            models.
+                        </span>
+                        <span class="publication-authors">S. Dadsetan and S. Wu.</span>
+                        <em class="publication-journal">
+                            Medical Imaging 2019: Imaging Informatics for Healthcare, Research, and
+                            Applications, vol. 10954, p. 109540M.
+                        </em>
+                        <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10954/2513098/A-data-interpretation-approach-for-deep-learning-based-prediction-models/10.1117/12.2513098.short" target="_blank"
+                           class="publication-link">[View Publication]</a>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <h2>Contact Me</h2>
+                <p>
+                    I'm always open to new opportunities and collaborations. Feel free to reach out!
+                </p>
+                <p>
+                    Email: <a href="mailto:sabadadsetan@gmail.com">sabadadsetan@gmail.com</a>
+                </p>
+            </section>
+
+
+            <footer>
+                <p>&copy; 2025 Saba Dadsetan</p>
+            </footer>
         </div>
-    </section>
-    
-    <section id="publications" class="section">
-        <div class="container">
-            <h2>Publications</h2>
-            <ul>
-                <li><a href="https://openreview.net/forum?id=HVAeM6sNo8">Robust Alzheimer’s Progression Modeling</a></li>
-                <li>Breast Cancer Risk Prediction Using Deep Learning</li>
-            </ul>
-        </div>
-    </section>
-    
-    <section id="contact" class="section">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Email: <a href="mailto:sabadadsetan@gmail.com">sabadadsetan@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/saba-dadsetan/">View Profile</a></p>
-        </div>
-    </section>
-    
-    <footer>
-        <div class="container">
-            <p>&copy; 2025 Saba Dadsetan. All rights reserved.</p>
-        </div>
-    </footer>
+    </div>
+    <!--<script src="script.js"></script>-->
 </body>
 </html>
+
+
