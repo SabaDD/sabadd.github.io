@@ -422,23 +422,72 @@ body {
     background-color: #444;
     margin-bottom: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center; /* Center the content */
+    text-align: left; /* Center the content */
 }
 
-    #contact p {
-        margin-bottom: 10px;
-        color: #eee;
-    }
+#contact p {
+    margin-bottom: 10px;
+    color: #eee;
+}
 
-    #contact a {
-        color: #2980b9;
-        /* Link color */
-        text-decoration: none;
-        font-weight: bold; /* Make the email more prominent */
-    }
+#contact a {
+    color: #2980b9;
+    /* Link color */
+    text-decoration: none;
+    font-weight: bold; /* Make the email more prominent */
+}
 
-        #contact a:hover {
-            text-decoration: underline;
-        }
+#contact a:hover {
+    text-decoration: underline;
+}
 
 
+#hobbies {
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #444;
+    margin-bottom: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: left;
+    /* Center the content */
+}
+
+#hobbies p {
+    color: #eee;
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+.hobbies-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* Flexbox for horizontal layout */
+    justify-content: left;
+    /* Center items horizontally */
+    gap: 20px;
+    /* Spacing between items */
+    flex-wrap: wrap;
+    /* Wrap items to next line on smaller screens */
+}
+
+.hobbies-list li {
+    background-color: #555;
+    color: #eee;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    text-align: left;
+    /* Align text to the left within each item */
+    display: flex;
+    /* Flexbox for icon and text alignment */
+    align-items: center;
+    /* Vertically align icon and text */
+}
+
+.hobby-icon {
+    font-size: 1.2em;
+    /* Larger icons */
+    margin-right: 8px;
+    /* Spacing between icon and text */
+}
