@@ -150,7 +150,9 @@ button {
         background-color: #388e3c;
         /* Darker green */
     }
-
+#journey p {
+    font-size: 0.9em;
+}
 /* ---------------------------------------------------------- */
 /*  7. News & Updates                                          */
 /* ---------------------------------------------------------- */
@@ -204,15 +206,18 @@ button {
     padding: 0;
 }
 
-    #about ul li {
-        display: inline-block;
-        background-color: #555;
-        color: #fff;
-        padding: 8px 12px;
-        margin: 5px;
-        border-radius: 5px;
-        font-size: 0.9em;
-    }
+#about ul li {
+    display: inline-block;
+    background-color: #555;
+    color: #fff;
+    padding: 8px 12px;
+    margin: 5px;
+    border-radius: 5px;
+    font-size: 0.9em;
+}
+#about p {
+    font-size: 0.9em;
+}
 
 /* ---------------------------------------------------------- */
 /*  9. Footer                                                */
@@ -269,6 +274,9 @@ footer {
 /* Add delay to stagger the animations */
 header {
     animation-delay: 0.2s;
+}
+#journey {
+    animation-delay: 0.3s;
 }
 
 #about {
